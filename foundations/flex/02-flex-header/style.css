@@ -1,6 +1,16 @@
+/* Notes to future self
+ul {
+  margin: 0;
+} 
+ - Solution also contains margin: 0 for unordered lists. I'm not quite sure what the function is for this yet. */
+
 .header  {
   font-family: monospace;
   background: papayawhip;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
 }
 
 .logo {
@@ -14,6 +24,10 @@
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 0;
 }
 
 a {
@@ -22,4 +36,25 @@ a {
   padding: 8px;
   /* this removes the line under the links */
   text-decoration: none;
+  display: flex;
 }
+
+/* Added .header  {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px; - Different to solution, but not important
+}
+
+ul {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap; - (Optional - so that all items stay in view regardless of window size) 
+  padding: 0;
+}
+
+a {
+  display: flex; - (Optional - this creates space between the links so they're not overlapping when window becomes too narrow)
+*/
+
+
